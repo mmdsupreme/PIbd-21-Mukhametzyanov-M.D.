@@ -1,0 +1,9 @@
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\bin\Release\ULSTU_OOP_Csharp_HomeLab1.exe.config
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\bin\Release\ULSTU_OOP_Csharp_HomeLab1.exe
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\bin\Release\ULSTU_OOP_Csharp_HomeLab1.pdb
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\obj\Release\Lab1.Form1.resources
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\obj\Release\ULSTU_OOP_Csharp_HomeLab1.Properties.Resources.resources
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\obj\Release\Lab1.csproj.GenerateResource.Cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\obj\Release\Lab1.csproj.CoreCompileInputs.cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\obj\Release\ULSTU_OOP_Csharp_HomeLab1.exe
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\obj\Release\ULSTU_OOP_Csharp_HomeLab1.pdb
