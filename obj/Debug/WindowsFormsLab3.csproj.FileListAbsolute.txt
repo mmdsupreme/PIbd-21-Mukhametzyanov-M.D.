@@ -1,0 +1,39 @@
+C:\Users\Green\source\repos\WindowsFormsLab3\bin\Debug\WindowsFormsLab3.exe.config
+C:\Users\Green\source\repos\WindowsFormsLab3\bin\Debug\WindowsFormsLab3.exe
+C:\Users\Green\source\repos\WindowsFormsLab3\bin\Debug\WindowsFormsLab3.pdb
+C:\Users\Green\source\repos\WindowsFormsLab3\bin\Debug\WindowsFormsLab2.exe
+C:\Users\Green\source\repos\WindowsFormsLab3\bin\Debug\WindowsFormsLab2.pdb
+C:\Users\Green\source\repos\WindowsFormsLab3\bin\Debug\WindowsFormsLab2.exe.config
+C:\Users\Green\source\repos\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.csprojResolveAssemblyReference.cache
+C:\Users\Green\source\repos\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.FormParking.resources
+C:\Users\Green\source\repos\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.Properties.Resources.resources
+C:\Users\Green\source\repos\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.csproj.GenerateResource.Cache
+C:\Users\Green\source\repos\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.csproj.CoreCompileInputs.cache
+C:\Users\Green\source\repos\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.exe
+C:\Users\Green\source\repos\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.pdb
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab3\bin\Debug\WindowsFormsLab3.exe.config
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab3\bin\Debug\WindowsFormsLab3.exe
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab3\bin\Debug\WindowsFormsLab3.pdb
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab3\bin\Debug\WindowsFormsLab2.exe
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab3\bin\Debug\WindowsFormsLab2.pdb
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab3\bin\Debug\WindowsFormsLab2.exe.config
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.csprojResolveAssemblyReference.cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.FormParking.resources
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.Properties.Resources.resources
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.csproj.GenerateResource.Cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.csproj.CoreCompileInputs.cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.exe
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.pdb
+E:\Marat\ПИбд-12\2 курс\ТП\Lab2\WindowsFormsLab3\bin\Debug\WindowsFormsLab3.exe.config
+E:\Marat\ПИбд-12\2 курс\ТП\Lab2\WindowsFormsLab3\bin\Debug\WindowsFormsLab3.exe
+E:\Marat\ПИбд-12\2 курс\ТП\Lab2\WindowsFormsLab3\bin\Debug\WindowsFormsLab3.pdb
+E:\Marat\ПИбд-12\2 курс\ТП\Lab2\WindowsFormsLab3\bin\Debug\WindowsFormsLab2.exe
+E:\Marat\ПИбд-12\2 курс\ТП\Lab2\WindowsFormsLab3\bin\Debug\WindowsFormsLab2.pdb
+E:\Marat\ПИбд-12\2 курс\ТП\Lab2\WindowsFormsLab3\bin\Debug\WindowsFormsLab2.exe.config
+E:\Marat\ПИбд-12\2 курс\ТП\Lab2\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.csprojResolveAssemblyReference.cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab2\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.FormParking.resources
+E:\Marat\ПИбд-12\2 курс\ТП\Lab2\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.Properties.Resources.resources
+E:\Marat\ПИбд-12\2 курс\ТП\Lab2\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.csproj.GenerateResource.Cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab2\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.csproj.CoreCompileInputs.cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab2\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.exe
+E:\Marat\ПИбд-12\2 курс\ТП\Lab2\WindowsFormsLab3\obj\Debug\WindowsFormsLab3.pdb

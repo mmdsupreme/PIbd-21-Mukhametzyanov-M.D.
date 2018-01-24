@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsLab2.Properties
+namespace WindowsFormsLab3.Properties
 {
 
 
