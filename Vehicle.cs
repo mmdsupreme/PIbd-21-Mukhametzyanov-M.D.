@@ -5,41 +5,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsLab2
+namespace Lab2
 {
     public abstract class Vehicle : ITransport
     {
-        protected float startPosX;
 
+        protected float startPosX;
         protected float startPosY;
 
         protected int countPassengers;
 
         public virtual int MaxCountPassengers { protected set; get; }
-
         public virtual int MaxSpeed { protected set; get; }
 
         public Color ColorBody { protected set; get; }
 
-        public virtual double Weight{ protected set; get; }
-
-        public abstract void moveCar(Graphics g);
+        public virtual double Weight { protected set; get; }
 
         public abstract void drawCar(Graphics g);
 
-        public void setPosition(int x, int y)
-        {
-            startPosX = x;
-            startPosY = y;
-        }
 
-        public void loadPassenger(int count)
-        {
-            if(countPassengers + count < MaxCountPassengers)
-            {
-                countPassengers += count;
-            }
-        }
+        public abstract void moveCar(Graphics g);
+      
 
         public int getPassenger()
         {
@@ -47,5 +34,22 @@ namespace WindowsFormsLab2
             countPassengers = 0;
             return count;
         }
+
+        public void loadPassengers(int count)
+        {
+            if (countPassengers + count < MaxCountPassengers)
+            {
+                countPassengers += count;
+            }
+        }
+
+
+        public void setPosition(int x, int y)
+        {
+            startPosX = x;
+            startPosY = y;
+        }
+
+        
     }
 }

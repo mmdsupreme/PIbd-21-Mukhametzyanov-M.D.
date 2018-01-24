@@ -3,73 +3,73 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WindowsFormsLab2;
 
-namespace WindowsFormsLab3
+namespace Lab2
 {
-    class ClassArray<T> where T : ITransport                                                                              
+    class ClassArray<T> where T : ITransport
     {
-        private T[] places;
+        private Dictionary<int, T> places;
 
+        private int maxCount;
         private T defaultValue;
 
         public ClassArray(int sizes, T defVal)
         {
             defaultValue = defVal;
-            places = new T[sizes];
-            for(int i = 0; i < places.Length; i++)
-            {
-                places[i] = defaultValue;
-            }
+            places = new Dictionary<int, T>();
+            maxCount = sizes;
         }
 
-        public static int operator +(ClassArray<T> p, T car)                                                            
-            for(int i = 0; i < p.places.Length; i++)
+
+        public static int operator +(ClassArray<T> p, T Car)
+        {
+            if (p.places.Count == p.maxCount)
+            {
+                return -1;
+            }
+            for (int i = 0; i < p.places.Count; i++)
             {
                 if (p.CheckFreePlace(i))
                 {
-                    p.places[i] = car;
+                    p.places.Add(i, Car);
                     return i;
                 }
             }
-            return -1;
+            p.places.Add(p.places.Count, Car);
+            return p.places.Count - 1;
+
         }
 
         public static T operator -(ClassArray<T> p, int index)
         {
-            if (!p.CheckFreePlace(index))
+            if (p.places.ContainsKey(index))
             {
                 T car = p.places[index];
-                p.places[index] = p.defaultValue;
+                p.places.Remove(index);
                 return car;
             }
             return p.defaultValue;
+
         }
 
-        private bool CheckFreePlace(int index)                                                                           
+        private bool CheckFreePlace(int index)
         {
-            if (index < 0 || index > places.Length)
-            {
-                return false;
-            }
-            if(places[index] == null)
-            {
-                return true;
-            }
-            if (places[index].Equals(defaultValue))
-            {
-                return true;
-            }
-            return false;
+
+            return !places.ContainsKey(index);
+         
         }
 
-        public T getObject(int ind)                                                                                         
+        public T this[int ind]
         {
-            if(ind > -1 && ind < places.Length)
+            get
             {
-                return places[ind];
+
+                if (places.ContainsKey(ind))
+                {
+                    return places[ind];
+                }
+                return defaultValue;
             }
-            return defaultValue;
         }
     }
 }

@@ -4,65 +4,103 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WindowsFormsLab2;
 
-namespace WindowsFormsLab3
+namespace Lab2
 {
     class Parking
     {
-        ClassArray<ITransport> parking;                                                                                    
+        List<ClassArray<ITransport>> parkingStages;
 
-        int countPlaces = 20;
 
-        int placeSizeWidth = 210;
+        int countPlaces = 5;
 
-        int placeSizeHeight = 80;
+        int placeSizeWidth = 300;
 
-        public Parking()
+        int placeSizeHeight = 100;
+
+        int currentLevel;
+
+        public int getCurrentLevel
         {
-            parking = new ClassArray<ITransport>(countPlaces, null);
+            get
+            {
+                return currentLevel;
+            }
         }
 
-        public int PutCarInParking(ITransport car)
+        public Parking(int countStages)
         {
-            return parking + car;
+            parkingStages = new List<ClassArray<ITransport>>();
+            
+            for(int i = 2; i < countStages+2; i++)
+            {
+                ClassArray<ITransport> classarr = new ClassArray<ITransport>(i, null);
+                parkingStages.Add(classarr);
+            } 
+            
+
         }
 
-        public ITransport GetCarInParking(int ticket)
+        public void LevelUp()
         {
-            return parking - ticket;
+            if (currentLevel + 1 < parkingStages.Count)
+            {
+                currentLevel++;
+            }
         }
+
+        public void LevelDown()
+        {
+            if (currentLevel > 0)
+            {
+                currentLevel--;
+            }
+        }
+
+
+        public int PutLocoInParking(ITransport car)
+        {
+            return parkingStages[currentLevel]+car;
+        }
+
+        public ITransport GetLocoInParking(int report)
+        {
+            return parkingStages[currentLevel]-report;
+        }
+
 
         public void Draw(Graphics g, int width, int height)
         {
             DrawMarking(g);
             for (int i = 0; i < countPlaces; i++)
             {
-                var car = parking.getObject(i);
+                var car = parkingStages[currentLevel][i];
                 if (car != null)
                 {
-                    car.setPosition(5 + i / 5 * placeSizeWidth + 5, i % 5 * placeSizeHeight + 15);
+                    car.setPosition(5 + i / 5 * placeSizeWidth + 5, i % 5 * placeSizeHeight + 45);
                     car.drawCar(g);
                 }
+
             }
         }
 
-        private void DrawMarking(Graphics g)
+        public void DrawMarking(Graphics g)
         {
             Pen pen = new Pen(Color.Black, 3);
-            
-            //границы парковки
-            g.DrawRectangle(pen, 0, 0, (countPlaces / 5) * placeSizeWidth, 480);
 
-            for (int i = 0; i < countPlaces / 5; i++)
-            { //отрисовка по 5 мест на линии
-                for (int j = 0; j < 6; ++j)
-                {//линия разметки места
-                    g.DrawLine(pen, i * placeSizeWidth, j * placeSizeHeight, i * placeSizeWidth + 100, j * placeSizeHeight);
+            g.DrawString("L" + (currentLevel + 1), new Font("Arial", 30), new SolidBrush(Color.Blue),(countPlaces/3)*placeSizeWidth-70,420);
+            g.DrawRectangle(pen, 0, 0, countPlaces / 5 * placeSizeWidth, 480);
+            for(int i = 0; i < countPlaces / 5; i++)
+            {
+                for(int j = 0; j < 6; ++j)
+                {
+                    g.DrawLine(pen,i*placeSizeWidth,j*placeSizeHeight,i*placeSizeWidth+110,j*placeSizeHeight);
+
                 }
                 g.DrawLine(pen, i * placeSizeWidth, 0, i * placeSizeWidth, 400);
             }
+
+
         }
     }
 }
-
