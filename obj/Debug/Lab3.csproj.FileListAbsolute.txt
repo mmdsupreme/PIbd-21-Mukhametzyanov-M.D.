@@ -1,0 +1,75 @@
+C:\Users\apels\Desktop\Lab3\Lab3\bin\Debug\Lab3.exe.config
+C:\Users\apels\Desktop\Lab3\Lab3\bin\Debug\Lab3.exe
+C:\Users\apels\Desktop\Lab3\Lab3\bin\Debug\Lab3.pdb
+C:\Users\apels\Desktop\Lab3\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
+C:\Users\apels\Desktop\Lab3\Lab3\obj\Debug\Lab2.FormDepocs.resources
+C:\Users\apels\Desktop\Lab3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+C:\Users\apels\Desktop\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.Cache
+C:\Users\apels\Desktop\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+C:\Users\apels\Desktop\Lab3\Lab3\obj\Debug\Lab3.exe
+C:\Users\apels\Desktop\Lab3\Lab3\obj\Debug\Lab3.pdb
+C:\Users\user\Desktop\Lab4\Lab3\Lab3\bin\Debug\Lab3.exe.config
+C:\Users\user\Desktop\Lab4\Lab3\Lab3\obj\Debug\Lab3.exe
+C:\Users\user\Desktop\Lab4\Lab3\Lab3\obj\Debug\Lab3.pdb
+C:\Users\user\Desktop\Lab4\Lab3\Lab3\bin\Debug\Lab3.exe
+C:\Users\user\Desktop\Lab4\Lab3\Lab3\bin\Debug\Lab3.pdb
+C:\Users\user\Desktop\Lab4\Lab3\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\Lab4\Lab3\Lab3\obj\Debug\Lab2.FormDepocs.resources
+C:\Users\user\Desktop\Lab4\Lab3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+C:\Users\user\Desktop\Lab4\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.Cache
+C:\Users\Kross\Desktop\Lab4\Lab3\Lab3\bin\Debug\Lab3.exe.config
+C:\Users\Kross\Desktop\Lab4\Lab3\Lab3\bin\Debug\Lab3.exe
+C:\Users\Kross\Desktop\Lab4\Lab3\Lab3\bin\Debug\Lab3.pdb
+C:\Users\Kross\Desktop\Lab4\Lab3\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
+C:\Users\Kross\Desktop\Lab4\Lab3\Lab3\obj\Debug\Lab2.FormDepocs.resources
+C:\Users\Kross\Desktop\Lab4\Lab3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+C:\Users\Kross\Desktop\Lab4\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.Cache
+C:\Users\Kross\Desktop\Lab4\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+C:\Users\Kross\Desktop\Lab4\Lab3\Lab3\obj\Debug\Lab3.exe
+C:\Users\Kross\Desktop\Lab4\Lab3\Lab3\obj\Debug\Lab3.pdb
+C:\Users\Kross\Desktop\Lab4\Lab3\Lab3\obj\Debug\Lab2.Form1.resources
+C:\Users\Kross\Desktop\Lab4\Lab3\Lab3\bin\Debug\NLog.dll
+C:\Users\Kross\Desktop\Lab4\Lab3\Lab3\bin\Debug\NLog.xml
+C:\Users\Kross\Desktop\Lab4\Lab3\Lab3\bin\Debug\NLog.config
+C:\Users\Kross\Desktop\TPC#Lab8\Lab3\Lab3\bin\Debug\NLog.config
+C:\Users\Kross\Desktop\TPC#Lab8\Lab3\Lab3\bin\Debug\Lab3.exe.config
+C:\Users\Kross\Desktop\TPC#Lab8\Lab3\Lab3\bin\Debug\Lab3.exe
+C:\Users\Kross\Desktop\TPC#Lab8\Lab3\Lab3\bin\Debug\Lab3.pdb
+C:\Users\Kross\Desktop\TPC#Lab8\Lab3\Lab3\bin\Debug\NLog.dll
+C:\Users\Kross\Desktop\TPC#Lab8\Lab3\Lab3\bin\Debug\NLog.xml
+C:\Users\Kross\Desktop\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
+C:\Users\Kross\Desktop\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab2.Form1.resources
+C:\Users\Kross\Desktop\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab2.FormDepocs.resources
+C:\Users\Kross\Desktop\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+C:\Users\Kross\Desktop\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.Cache
+C:\Users\Kross\Desktop\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+C:\Users\Kross\Desktop\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab3.exe
+C:\Users\Kross\Desktop\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab3.pdb
+E:\Marat\ПИбд-12\2 курс\ТП\TPC#Lab8\Lab3\Lab3\bin\Debug\NLog.config
+E:\Marat\ПИбд-12\2 курс\ТП\TPC#Lab8\Lab3\Lab3\bin\Debug\Lab3.exe.config
+E:\Marat\ПИбд-12\2 курс\ТП\TPC#Lab8\Lab3\Lab3\bin\Debug\Lab3.exe
+E:\Marat\ПИбд-12\2 курс\ТП\TPC#Lab8\Lab3\Lab3\bin\Debug\Lab3.pdb
+E:\Marat\ПИбд-12\2 курс\ТП\TPC#Lab8\Lab3\Lab3\bin\Debug\NLog.dll
+E:\Marat\ПИбд-12\2 курс\ТП\TPC#Lab8\Lab3\Lab3\bin\Debug\NLog.xml
+E:\Marat\ПИбд-12\2 курс\ТП\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
+E:\Marat\ПИбд-12\2 курс\ТП\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab2.Form1.resources
+E:\Marat\ПИбд-12\2 курс\ТП\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+E:\Marat\ПИбд-12\2 курс\ТП\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.Cache
+E:\Marat\ПИбд-12\2 курс\ТП\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+E:\Marat\ПИбд-12\2 курс\ТП\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab3.exe
+E:\Marat\ПИбд-12\2 курс\ТП\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab3.pdb
+E:\Marat\ПИбд-12\2 курс\ТП\TPC#Lab8\Lab3\Lab3\obj\Debug\Lab2.FormParkingcs.resources
+E:\Marat\ПИбд-12\2 курс\ТП\Lab8\Lab3\Lab3\bin\Debug\NLog.config
+E:\Marat\ПИбд-12\2 курс\ТП\Lab8\Lab3\Lab3\bin\Debug\Lab3.exe.config
+E:\Marat\ПИбд-12\2 курс\ТП\Lab8\Lab3\Lab3\bin\Debug\Lab3.exe
+E:\Marat\ПИбд-12\2 курс\ТП\Lab8\Lab3\Lab3\bin\Debug\Lab3.pdb
+E:\Marat\ПИбд-12\2 курс\ТП\Lab8\Lab3\Lab3\bin\Debug\NLog.dll
+E:\Marat\ПИбд-12\2 курс\ТП\Lab8\Lab3\Lab3\bin\Debug\NLog.xml
+E:\Marat\ПИбд-12\2 курс\ТП\Lab8\Lab3\Lab3\obj\Debug\Lab3.csprojResolveAssemblyReference.cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab8\Lab3\Lab3\obj\Debug\Lab2.Form1.resources
+E:\Marat\ПИбд-12\2 курс\ТП\Lab8\Lab3\Lab3\obj\Debug\Lab2.FormParkingcs.resources
+E:\Marat\ПИбд-12\2 курс\ТП\Lab8\Lab3\Lab3\obj\Debug\Lab3.Properties.Resources.resources
+E:\Marat\ПИбд-12\2 курс\ТП\Lab8\Lab3\Lab3\obj\Debug\Lab3.csproj.GenerateResource.Cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab8\Lab3\Lab3\obj\Debug\Lab3.csproj.CoreCompileInputs.cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab8\Lab3\Lab3\obj\Debug\Lab3.exe
+E:\Marat\ПИбд-12\2 курс\ТП\Lab8\Lab3\Lab3\obj\Debug\Lab3.pdb
