@@ -1,0 +1,20 @@
+C:\Users\Green\source\repos\WindowsFormsLab2\obj\Debug\WindowsFormsLab2.csprojResolveAssemblyReference.cache
+C:\Users\Green\source\repos\WindowsFormsLab2\obj\Debug\WindowsFormsLab2.Form1.resources
+C:\Users\Green\source\repos\WindowsFormsLab2\obj\Debug\WindowsFormsLab2.Properties.Resources.resources
+C:\Users\Green\source\repos\WindowsFormsLab2\obj\Debug\WindowsFormsLab2.csproj.GenerateResource.Cache
+C:\Users\Green\source\repos\WindowsFormsLab2\obj\Debug\WindowsFormsLab2.csproj.CoreCompileInputs.cache
+C:\Users\Green\source\repos\WindowsFormsLab2\obj\Debug\WindowsFormsLab2.exe
+C:\Users\Green\source\repos\WindowsFormsLab2\obj\Debug\WindowsFormsLab2.pdb
+C:\Users\Green\source\repos\WindowsFormsLab2\bin\Debug\WindowsFormsLab2.exe.config
+C:\Users\Green\source\repos\WindowsFormsLab2\bin\Debug\WindowsFormsLab2.exe
+C:\Users\Green\source\repos\WindowsFormsLab2\bin\Debug\WindowsFormsLab2.pdb
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab2\bin\Debug\WindowsFormsLab2.exe.config
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab2\bin\Debug\WindowsFormsLab2.exe
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab2\bin\Debug\WindowsFormsLab2.pdb
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab2\obj\Debug\WindowsFormsLab2.csprojResolveAssemblyReference.cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab2\obj\Debug\WindowsFormsLab2.Form1.resources
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab2\obj\Debug\WindowsFormsLab2.Properties.Resources.resources
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab2\obj\Debug\WindowsFormsLab2.csproj.GenerateResource.Cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab2\obj\Debug\WindowsFormsLab2.csproj.CoreCompileInputs.cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab2\obj\Debug\WindowsFormsLab2.exe
+E:\Marat\ПИбд-12\2 курс\ТП\Lab3\WindowsFormsLab2\obj\Debug\WindowsFormsLab2.pdb
