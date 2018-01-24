@@ -1,0 +1,20 @@
+C:\Users\cube\Documents\Visual Studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\bin\Debug\ULSTU_OOP_Csharp_HomeLab1.exe.config
+C:\Users\cube\Documents\Visual Studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\bin\Debug\ULSTU_OOP_Csharp_HomeLab1.exe
+C:\Users\cube\Documents\Visual Studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\bin\Debug\ULSTU_OOP_Csharp_HomeLab1.pdb
+C:\Users\cube\Documents\Visual Studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.Form1.resources
+C:\Users\cube\Documents\Visual Studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.Properties.Resources.resources
+C:\Users\cube\Documents\Visual Studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_CSharp_Lab1.csproj.GenerateResource.Cache
+C:\Users\cube\Documents\Visual Studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_CSharp_Lab1.csproj.CoreCompileInputs.cache
+C:\Users\cube\Documents\Visual Studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.exe
+C:\Users\cube\Documents\Visual Studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.pdb
+C:\Users\cube\Documents\Visual Studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_CSharp_Lab1.csprojResolveAssemblyReference.cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_CSharp_Lab1.csprojResolveAssemblyReference.cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.Form1.resources
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.Properties.Resources.resources
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_CSharp_Lab1.csproj.GenerateResource.Cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_CSharp_Lab1.csproj.CoreCompileInputs.cache
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.exe
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.pdb
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\bin\Debug\ULSTU_OOP_Csharp_HomeLab1.exe.config
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\bin\Debug\ULSTU_OOP_Csharp_HomeLab1.exe
+E:\Marat\ПИбд-12\2 курс\ТП\Lab1\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\bin\Debug\ULSTU_OOP_Csharp_HomeLab1.pdb
