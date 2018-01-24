@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsLab2
+namespace Lab2
 {
     public interface ITransport
     {
@@ -13,10 +13,12 @@ namespace WindowsFormsLab2
 
         void drawCar(Graphics g);
 
-        void setPosition(int x, int y);
+        void setPosition(int x , int y);
 
-        void loadPassenger(int count);
+        void loadPassengers(int count);   
 
         int getPassenger();
+
+        
     }
 }

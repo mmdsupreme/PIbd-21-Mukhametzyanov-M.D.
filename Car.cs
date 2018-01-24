@@ -5,25 +5,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WindowsFormsLab2
+namespace Lab2
 {
     public class Car : Vehicle
     {
+
         public override int MaxSpeed
         {
             get
             {
                 return base.MaxSpeed;
             }
+
             protected set
             {
-                if (value > 0 && value < 300)
+                if (value > 0 && value < 150)
                 {
                     base.MaxSpeed = value;
                 }
                 else
                 {
-                    base.MaxSpeed = 150;
+                    base.MaxSpeed = 50;
                 }
             }
         }
@@ -34,9 +36,10 @@ namespace WindowsFormsLab2
             {
                 return base.MaxCountPassengers;
             }
+
             protected set
             {
-                if (value > 0 && value < 5)
+                if (value > 0 && value < 0)
                 {
                     base.MaxCountPassengers = value;
                 }
@@ -53,45 +56,46 @@ namespace WindowsFormsLab2
             {
                 return base.Weight;
             }
+
             protected set
             {
-                if (value > 500 && value < 1500)
+
+                if (value > 300 && value < 1000)
                 {
                     base.Weight = value;
                 }
                 else
                 {
-                    base.Weight = 4;
+                    base.Weight = 1000;
                 }
             }
         }
 
-        public Car(int MaxSpeed, int MaxCountPassengers, double weight, Color color)
+        public Car(int maxSpeed, int maxCountPassengers, double weight, Color color)
         {
-            this.MaxSpeed = MaxSpeed;
-            this.MaxCountPassengers = MaxCountPassengers;
+            this.MaxSpeed = maxSpeed;
+            this.MaxCountPassengers = maxCountPassengers;
             this.ColorBody = color;
             this.Weight = weight;
-            this.MaxCountPassengers = 0;
+            this.countPassengers = 0;
             Random rand = new Random();
-            startPosX = rand.Next(10, 200);
-            startPosY = rand.Next(10, 200);
+            startPosX = rand.Next(400, 500);
+            startPosY = rand.Next(100, 200);
+        }
+
+
+        public override void drawCar(Graphics g)
+        {
+            drawBaseCar(g);
         }
 
         public override void moveCar(Graphics g)
         {
-            startPosX +=
-                (MaxSpeed * 50 / (float)Weight) /
-                    (countPassengers == 0 ? 1 : countPassengers);
+            startPosX -= (MaxSpeed *50/(float)Weight)/(countPassengers==0?1:countPassengers);
             drawCar(g);
         }
 
-        public override void drawCar(Graphics g)
-        {
-            drawLightCar(g);
-        }
-
-        protected virtual void drawLightCar(Graphics g)
+        protected virtual void drawBaseCar(Graphics g)
         {
             //границы машины
             Pen pen = new Pen(Color.Black);
@@ -125,7 +129,7 @@ namespace WindowsFormsLab2
             g.DrawRectangle(pen, startPosX + 15, startPosY + 5, 35, 40);
             g.DrawRectangle(pen, startPosX + 65, startPosY + 10, 25, 30);
             g.DrawRectangle(pen, startPosX, startPosY + 10, 15, 30);
-
         }
+
     }
 }
