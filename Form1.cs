@@ -14,7 +14,7 @@ namespace Lab2
     {
 
         ITransport car = null;
-        public ITransport getCar { get { return car; } }                                                                    
+        public ITransport getLocomotive { get { return car; } }
 
         private void Draw()
         {
@@ -30,7 +30,7 @@ namespace Lab2
 
         private event myDel eventAddTrain;
 
-                public void AddEvent(myDel ev)                                                                            
+                public void AddEvent(myDel ev)
                 {
                     if (eventAddTrain == null)
                     {
@@ -38,10 +38,10 @@ namespace Lab2
                     }
                     else
                     {
-                        eventAddTrain += ev;                                                                              
-            }                                                                                                            
+                        eventAddTrain += ev;
+                    }
 
-        }
+                }
 
         public Form1()
         {
@@ -167,7 +167,7 @@ namespace Lab2
 
         private void label3_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)

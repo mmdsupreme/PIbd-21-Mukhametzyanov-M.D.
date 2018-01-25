@@ -22,6 +22,22 @@ namespace Lab2
             this.dopColor = dopColor;
         }
 
+
+        public Jeep(string info) : base(info)
+        {
+            string[] strs = info.Split(';');
+            if (strs.Length == 8) {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                MaxCountPassengers = Convert.ToInt32(strs[1]);
+                Weight = Convert.ToInt32(strs[2]);
+                ColorBody = Color.FromName(strs[3]);
+                suspension = Convert.ToBoolean(strs[4]);
+                reserve = Convert.ToBoolean(strs[5]);
+                exhaustPipe = Convert.ToBoolean(strs[6]);
+                dopColor = Color.FromName(strs[7]);
+            }
+        }
+
         protected override void drawBaseCar(Graphics g)
         {
             if (suspension)
@@ -79,6 +95,9 @@ namespace Lab2
             dopColor = color;
         }
 
-
+        public override string getInfo()
+        {
+            return MaxSpeed + ";" + MaxCountPassengers + ";" + Weight + ";" + ColorBody.Name + ";" + suspension + ";" + reserve + ";" + exhaustPipe + ";" + dopColor.Name;
+        }
     }
 }

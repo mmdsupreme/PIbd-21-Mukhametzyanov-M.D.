@@ -83,6 +83,22 @@ namespace Lab2
             startPosY = rand.Next(100, 200);
         }
 
+        public Car(string info) 
+        {
+            string[] strs = info.Split(';');
+            if(strs.Length == 4)
+            {
+                MaxSpeed = Convert.ToInt32(strs[0]);
+                MaxCountPassengers = Convert.ToInt32(strs[1]);
+                Weight = Convert.ToInt32(strs[2]);
+                ColorBody = Color.FromName(strs[3]);
+            }
+            this.countPassengers = 0;
+            Random rand = new Random();
+            startPosX = rand.Next(400, 500);
+            startPosY = rand.Next(100, 200);
+        }
+
 
         public override void drawCar(Graphics g)
         {
@@ -92,11 +108,12 @@ namespace Lab2
         public override void moveCar(Graphics g)
         {
             startPosX -= (MaxSpeed *50/(float)Weight)/(countPassengers==0?1:countPassengers);
-           // base.drawCar(g);
+            drawCar(g);
         }
 
         protected virtual void drawBaseCar(Graphics g)
         {
+
 
             //границы машины
             Pen pen = new Pen(Color.Black);
@@ -130,6 +147,10 @@ namespace Lab2
             g.DrawRectangle(pen, startPosX + 15, startPosY + 5, 35, 40);
             g.DrawRectangle(pen, startPosX + 65, startPosY + 10, 25, 30);
             g.DrawRectangle(pen, startPosX, startPosY + 10, 15, 30);
+        }
+
+        public override string getInfo() {
+            return MaxSpeed + ";" + MaxCountPassengers + ";" + Weight + ";" + ColorBody.Name;
         }
 
     }

@@ -42,7 +42,7 @@ namespace Lab2
 
 
 
-            
+           
         }
 
         public static T operator -(ClassArray<T> p, int index)
@@ -56,6 +56,8 @@ namespace Lab2
             return p.defaultValue;
 
 
+
+            
             
         }
 

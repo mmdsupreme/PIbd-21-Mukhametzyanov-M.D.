@@ -44,7 +44,7 @@ namespace Lab2
         }
 
 
-        public void setPosition(int x, int y)                                                                              
+        public void setPosition(int x, int y)
         {
             startPosX = x;
             startPosY = y;
@@ -54,5 +54,6 @@ namespace Lab2
         {
             ColorBody = color;
         }
+        public abstract string getInfo();
     }
 }
