@@ -14,7 +14,7 @@ namespace Lab2
     {
 
         ITransport car = null;
-        public ITransport getLocomotive { get { return car; } }
+        public ITransport getCar { get { return car; } }
 
         private void Draw()
         {

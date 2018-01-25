@@ -114,7 +114,6 @@ namespace Lab2
         protected virtual void drawBaseCar(Graphics g)
         {
 
-
             //границы машины
             Pen pen = new Pen(Color.Black);
             g.DrawEllipse(pen, startPosX, startPosY, 23, 23);

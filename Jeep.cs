@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Lab2
 {
-    public class Jeep : Car
+    public class Jeep : Car, IComparable<Jeep>, IEquatable<Jeep>
     {
         private bool suspension;
         private bool reserve;
@@ -61,6 +61,7 @@ namespace Lab2
 
 
 
+
             if (reserve)
             {
                 Brush spoiler = new SolidBrush(dopColor);
@@ -82,9 +83,6 @@ namespace Lab2
             }
             base.drawBaseCar(g);
             Brush br = new SolidBrush(dopColor);
-
-
-
             g.FillRectangle(br, startPosX + 15, startPosY + 15, 35, 5);
             g.FillRectangle(br, startPosX + 15, startPosY + 30, 35, 5);
 
@@ -98,6 +96,78 @@ namespace Lab2
         public override string getInfo()
         {
             return MaxSpeed + ";" + MaxCountPassengers + ";" + Weight + ";" + ColorBody.Name + ";" + suspension + ";" + reserve + ";" + exhaustPipe + ";" + dopColor.Name;
+        }
+
+        public int CompareTo(Jeep other)                                                                                                             
+        {
+            var res = (this is Vehicle).CompareTo(other is Vehicle);
+            if (res != 0)
+            {
+                return res;
+            }
+            if (suspension != other.suspension)
+            {
+                return suspension.CompareTo(other.suspension);
+            }
+            if (exhaustPipe != other.exhaustPipe)
+            {
+                return exhaustPipe.CompareTo(other.exhaustPipe);
+            }
+            if (reserve != other.reserve)
+            {
+                return reserve.CompareTo(other.reserve);
+            }
+            if (dopColor != other.dopColor)
+            {
+                return dopColor.Name.CompareTo(other.dopColor);
+            }
+            return 0;
+        }
+        public bool Equals(Jeep other)
+        {
+            var res = (this is Vehicle).Equals(other is Vehicle);
+            if (!res)
+            {
+                return res;
+            }
+            if (suspension != other.suspension)
+            {
+                return false;
+            }
+            if (exhaustPipe != other.exhaustPipe)
+            {
+                return false;
+            }
+            if (reserve != other.reserve)
+            {
+                return false;
+            }
+            if (dopColor != other.dopColor)
+            {
+                return false;
+            }
+
+            return true;
+        }
+        public override bool Equals(object obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            Jeep carObj = obj as Jeep;
+            if (carObj == null)
+            {
+                return false;
+            }
+            else
+            {
+                return Equals(carObj);
+            }
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
     }
 }
