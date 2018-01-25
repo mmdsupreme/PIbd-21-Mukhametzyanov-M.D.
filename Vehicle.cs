@@ -44,12 +44,15 @@ namespace Lab2
         }
 
 
-        public void setPosition(int x, int y)
+        public void setPosition(int x, int y)                                                                              
         {
             startPosX = x;
             startPosY = y;
         }
 
-        
+        public virtual void setMainColor(Color color)
+        {
+            ColorBody = color;
+        }
     }
 }

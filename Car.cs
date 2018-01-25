@@ -92,11 +92,12 @@ namespace Lab2
         public override void moveCar(Graphics g)
         {
             startPosX -= (MaxSpeed *50/(float)Weight)/(countPassengers==0?1:countPassengers);
-            drawCar(g);
+           // base.drawCar(g);
         }
 
         protected virtual void drawBaseCar(Graphics g)
         {
+
             //границы машины
             Pen pen = new Pen(Color.Black);
             g.DrawEllipse(pen, startPosX, startPosY, 23, 23);

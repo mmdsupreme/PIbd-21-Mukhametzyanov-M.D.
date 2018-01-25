@@ -39,9 +39,6 @@
             this.buttonDown = new System.Windows.Forms.Button();
             this.buttonUp = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxParking)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTakeCar)).BeginInit();
@@ -50,9 +47,9 @@
             // pictureBoxParking
             // 
             this.pictureBoxParking.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.pictureBoxParking.Location = new System.Drawing.Point(12, 23);
+            this.pictureBoxParking.Location = new System.Drawing.Point(12, 12);
             this.pictureBoxParking.Name = "pictureBoxParking";
-            this.pictureBoxParking.Size = new System.Drawing.Size(456, 448);
+            this.pictureBoxParking.Size = new System.Drawing.Size(456, 459);
             this.pictureBoxParking.TabIndex = 0;
             this.pictureBoxParking.TabStop = false;
             // 
@@ -74,9 +71,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(44, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 3;
-            this.label1.Text = "№ Места";
+            this.label1.Text = "Номер";
             // 
             // maskedTextBox1
             // 
@@ -146,34 +143,17 @@
             // 
             this.button1.Location = new System.Drawing.Point(502, 187);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 57);
+            this.button1.Size = new System.Drawing.Size(167, 57);
             this.button1.TabIndex = 8;
-            this.button1.Text = "Выбрыть car";
+            this.button1.Text = "Вызвать авто";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "txt file | *.txt";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(594, 188);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 56);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Выбрать jeep";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // FormParkingcs
+            // FormDepocs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(698, 497);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonUp);
             this.Controls.Add(this.buttonDown);
@@ -181,7 +161,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBoxParking);
-            this.Name = "FormParkingcs";
+            this.Name = "FormDepocs";
             this.Text = "FormParkingcs";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxParking)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -205,8 +185,5 @@
         private System.Windows.Forms.Button buttonDown;
         private System.Windows.Forms.Button buttonUp;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button button2;
     }
 }
