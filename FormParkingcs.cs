@@ -13,6 +13,7 @@ namespace Lab2
     public partial class FormParkingcs : Form
     {
         Parking parking;
+        Form1 form;
         public FormParkingcs()
         {
             InitializeComponent();
@@ -43,7 +44,7 @@ namespace Lab2
             if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 var car = new Car(100, 4, 1000, dialog.Color);
-                int place = parking.PutLocoInParking(car);
+                int place = parking.PutCarInParking(car);
                 Draw();
                 MessageBox.Show("Ваше место: " + place);
             }
@@ -60,7 +61,7 @@ namespace Lab2
                     if (dialogDop.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                     {
                         var car = new Jeep(100, 4, 1000, dialog.Color, true, true, true, dialogDop.Color);
-                        int place = parking.PutLocoInParking(car);
+                        int place = parking.PutCarInParking(car);
                         Draw();
                         MessageBox.Show("Ваше место: " + place);
                     }
@@ -73,11 +74,11 @@ namespace Lab2
         {
             {
                 if (listBoxLevels.SelectedIndex > -1)
-                {//Прежде чем забрать машину, надо выбрать с какого уровня будем забирать
+                {
                     string level = listBoxLevels.Items[listBoxLevels.SelectedIndex].ToString();
                     if (maskedTextBox1.Text != "")
                     {
-                        var car = parking.GetLocoInParking(Convert.ToInt32(maskedTextBox1.Text));
+                        var car = parking.GetCarInParking(Convert.ToInt32(maskedTextBox1.Text));
 
                         Bitmap bmp = new Bitmap(pictureBoxTakeCar.Width, pictureBoxTakeCar.Height);
                         Graphics gr = Graphics.FromImage(bmp);
@@ -87,7 +88,7 @@ namespace Lab2
                         Draw();
                     }
                     else
-                    {//иначесообщаемобэтом
+                    {
                         MessageBox.Show("Извинте, на этом месте нет машины");
                     }
 
@@ -117,31 +118,29 @@ namespace Lab2
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            ColorDialog dialog = new ColorDialog();
-            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                var car = new Car(100, 4, 1000, dialog.Color);
-                int place = parking.PutLocoInParking(car);
-                Draw();
-                MessageBox.Show("Ваше место: " + place);
-            }
+            form = new Form1();
+            form.AddEvent(AddLoco);
+            form.Show();
+
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void AddLoco(ITransport car)
         {
-            ColorDialog dialog = new ColorDialog();
-            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (car != null)
             {
-                ColorDialog dialogDop = new ColorDialog();
-                if (dialogDop.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                int place = parking.PutCarInParking(car);
+                if (place > -1)
                 {
-                    var car = new Jeep(100, 4, 1000, dialog.Color, true, true, true, dialogDop.Color);
-                    int place = parking.PutLocoInParking(car);
                     Draw();
                     MessageBox.Show("Ваше место: " + place);
                 }
+                else
+                {
+                    MessageBox.Show("Машину не удалось поставить");
+                }
             }
         }
+
     }
 }
 

@@ -92,12 +92,13 @@ namespace Lab2
         public override void moveCar(Graphics g)
         {
             startPosX -= (MaxSpeed *50/(float)Weight)/(countPassengers==0?1:countPassengers);
-            drawCar(g);
+           
         }
 
         protected virtual void drawBaseCar(Graphics g)
         {
-            //границы машины
+
+            
             Pen pen = new Pen(Color.Black);
             g.DrawEllipse(pen, startPosX, startPosY, 23, 23);
             g.DrawEllipse(pen, startPosX, startPosY + 30, 23, 23);
@@ -106,26 +107,26 @@ namespace Lab2
             g.DrawRectangle(pen, startPosX - 1, startPosY + 10, 10, 30);
             g.DrawRectangle(pen, startPosX + 80, startPosY + 10, 10, 30);
             g.DrawRectangle(pen, startPosX + 10, startPosY - 1, 70, 52);
-            //задние фары
+           
             Brush brRed = new SolidBrush(Color.Red);
             g.FillEllipse(brRed, startPosX, startPosY, 20, 20);
             g.FillEllipse(brRed, startPosX, startPosY + 30, 20, 20);
-            //передние фары
+          
             Brush brYellow = new SolidBrush(Color.Yellow);
             g.FillEllipse(brRed, startPosX + 70, startPosY, 20, 20);
             g.FillEllipse(brRed, startPosX + 70, startPosY + 30, 20, 20);
-            //кузов
+        
             Brush br = new SolidBrush(ColorBody);
             g.FillRectangle(br, startPosX, startPosY + 10, 10, 30);
             g.FillRectangle(br, startPosX + 80, startPosY + 10, 10, 30);
             g.FillRectangle(br, startPosX + 10, startPosY, 70, 50);
-            //стекла
+           
             Brush brBlue = new SolidBrush(Color.LightBlue);
             g.FillRectangle(brBlue, startPosX + 50, startPosY + 5, 5, 40);
             g.FillRectangle(brBlue, startPosX + 10, startPosY + 5, 5, 40);
             g.FillRectangle(brBlue, startPosX + 25, startPosY + 3, 35, 2);
             g.FillRectangle(brBlue, startPosX + 25, startPosY + 46, 35, 2);
-            //рамкой крышу
+            
             g.DrawRectangle(pen, startPosX + 15, startPosY + 5, 35, 40);
             g.DrawRectangle(pen, startPosX + 65, startPosY + 10, 25, 30);
             g.DrawRectangle(pen, startPosX, startPosY + 10, 15, 30);

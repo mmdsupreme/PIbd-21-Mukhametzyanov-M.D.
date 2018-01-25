@@ -58,12 +58,12 @@ namespace Lab2
         }
 
 
-        public int PutLocoInParking(ITransport car)
+        public int PutCarInParking(ITransport car)
         {
             return parkingStages[currentLevel]+car;
         }
 
-        public ITransport GetLocoInParking(int report)
+        public ITransport GetCarInParking(int report)
         {
             return parkingStages[currentLevel]-report;
         }
