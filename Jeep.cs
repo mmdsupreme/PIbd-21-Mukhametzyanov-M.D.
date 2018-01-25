@@ -52,11 +52,11 @@ namespace Lab2
                 g.DrawRectangle(pen, startPosX, startPosY - 6, 14, 15);
                 g.DrawRectangle(pen, startPosX, startPosY + 40, 14, 15);
 
-                Brush suspension = new SolidBrush(dopColor);
+                Brush suspen = new SolidBrush(dopColor);
 
 
-                g.FillRectangle(suspension, startPosX, startPosY - 5, 15, 15);
-                g.FillRectangle(suspension, startPosX, startPosY + 40, 15, 15);
+                g.FillRectangle(suspen, startPosX, startPosY - 5, 15, 15);
+                g.FillRectangle(suspen, startPosX, startPosY + 40, 15, 15);
             }
 
 

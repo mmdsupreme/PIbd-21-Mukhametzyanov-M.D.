@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab3;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +20,7 @@ namespace Lab2
             defaultValue = defVal;
             places = new Dictionary<int, T>();
             maxCount = sizes;
-            
+           
         }
 
 
@@ -27,7 +28,7 @@ namespace Lab2
         {
             if (p.places.Count == p.maxCount)
             {
-                return -1;
+                throw new StoreOverflowExeption();
             }
             for (int i = 0; i < p.places.Count; i++)
             {
@@ -52,8 +53,9 @@ namespace Lab2
                 T car = p.places[index];
                 p.places.Remove(index);
                 return car;
+                
             }
-            return p.defaultValue;
+            throw new StoreIndexOutOfRangeExeption();
 
 
 

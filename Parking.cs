@@ -109,20 +109,20 @@ namespace Lab2
             {
                 File.Delete(filename);
             }
-            using (FileStream fs = new FileStream(filename, FileMode.Create))                                                               
+            using (FileStream fs = new FileStream(filename, FileMode.Create))                                                             
             {
                 using (BufferedStream bs = new BufferedStream(fs))
                 {
-                    byte[] info = new UTF8Encoding(true).GetBytes("CountLeveles:" + parkingStages.Count + Environment.NewLine);                 
+                    byte[] info = new UTF8Encoding(true).GetBytes("CountLeveles:" + parkingStages.Count + Environment.NewLine);                          
                     fs.Write(info, 0, info.Length);
                     foreach (var level in parkingStages)
                     {
-                        info = new UTF8Encoding(true).GetBytes("Level" + Environment.NewLine);                                              
+                        info = new UTF8Encoding(true).GetBytes("Level" + Environment.NewLine);                                                
                         fs.Write(info, 0, info.Length);
                         for (int i = 0; i < countPlaces; i++)                                                                             
                         {
                             var car = level[i];
-                            if (car != null)                                                                                             
+                            if (car != null)                                                                                                
                             {
                                 if (car.GetType().Name == "Car")                                                                           
                                 {
@@ -134,7 +134,7 @@ namespace Lab2
                                     info = new UTF8Encoding(true).GetBytes("Jeep:");
                                     fs.Write(info, 0, info.Length);
                                 }
-                                info = new UTF8Encoding(true).GetBytes(car.getInfo() + Environment.NewLine);                                   
+                                info = new UTF8Encoding(true).GetBytes(car.getInfo() + Environment.NewLine);                                          //записывает параметры каждого
                                 fs.Write(info, 0, info.Length);
                             }
                         }
@@ -147,32 +147,32 @@ namespace Lab2
 
         public bool LoadData(string filename)
         {
-            if (!File.Exists(filename))                                                                                   
+            if (!File.Exists(filename))                                                                                    
             {
                 return false;
             }
-            using (FileStream fs = new FileStream(filename, FileMode.Open))                                                  
+            using (FileStream fs = new FileStream(filename, FileMode.Open))                                                 
             {
                 string s = "";
                 using (BufferedStream bs = new BufferedStream(fs))
                 {
                     byte[] b = new byte[fs.Length];
                     UTF8Encoding temp = new UTF8Encoding(true);
-                    while (bs.Read(b, 0, b.Length) > 0)                                                                   
+                    while (bs.Read(b, 0, b.Length) > 0)                                                                  
                     {
                         s += temp.GetString(b);
                     }                    
                 }
                 s = s.Replace("\r", "");
-                var strs = s.Split('\n');                                                                                  
-                if (strs[0].Contains("CountLeveles"))                                                                        
+                var strs = s.Split('\n');                                                                                   
+                if (strs[0].Contains("CountLeveles"))                                                                       
                 {
                     int count = Convert.ToInt32(strs[0].Split(':')[1]);
-                    if (parkingStages != null)                                                                                 
+                    if (parkingStages != null)                                                                                  
                     {
-                        parkingStages.Clear();                                                                             
+                        parkingStages.Clear();                                                                                 
                     }
-                    parkingStages = new List<ClassArray<ITransport>>(count);                                                         
+                    parkingStages = new List<ClassArray<ITransport>>(count);                                                     
                 }
                 else
                 {

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Lab3;
+using NLog;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,16 +16,18 @@ namespace Lab2
     {
         Parking parking;
         Form1 form;
+        private Logger log;
         public FormParkingcs()
         {
             InitializeComponent();
+            log = LogManager.GetCurrentClassLogger();
             parking = new Parking(5);
             for (int i = 1; i < 6; i++)
             {
                 listBoxLevels.Items.Add("Уровень " + i);
             }
             listBoxLevels.SelectedIndex = parking.getCurrentLevel;
-   
+
             Draw();
         }
 
@@ -45,6 +49,7 @@ namespace Lab2
             {
                 var car = new Car(100, 4, 1000, dialog.Color);
                 int place = parking.PutCarInParking(car);
+                log.Info("Добавили; Текщее место: " + place);
                 Draw();
                 MessageBox.Show("Ваше место: " + place);
             }
@@ -62,6 +67,7 @@ namespace Lab2
                     {
                         var car = new Jeep(100, 4, 1000, dialog.Color, true, true, true, dialogDop.Color);
                         int place = parking.PutCarInParking(car);
+                        log.Info("Добавили; Текщее место: " + place);
                         Draw();
                         MessageBox.Show("Ваше место: " + place);
                     }
@@ -78,18 +84,27 @@ namespace Lab2
                     string level = listBoxLevels.Items[listBoxLevels.SelectedIndex].ToString();
                     if (maskedTextBox1.Text != "")
                     {
-                        var car = parking.GetCarInParking(Convert.ToInt32(maskedTextBox1.Text));
+                        try
+                        {
+                            var car = parking.GetCarInParking(Convert.ToInt32(maskedTextBox1.Text));
 
-                        Bitmap bmp = new Bitmap(pictureBoxTakeCar.Width, pictureBoxTakeCar.Height);
-                        Graphics gr = Graphics.FromImage(bmp);
-                        car.setPosition(20, 50);
-                        car.drawCar(gr);
-                        pictureBoxTakeCar.Image = bmp;
-                        Draw();
-                    }
-                    else
-                    {//иначесообщаемобэтом
-                        MessageBox.Show("Извините, на этом месте нет машины");
+                            Bitmap bmp = new Bitmap(pictureBoxTakeCar.Width, pictureBoxTakeCar.Height);
+                            Graphics gr = Graphics.FromImage(bmp);
+                            car.setPosition(20, 50);
+                            car.drawCar(gr);
+                            pictureBoxTakeCar.Image = bmp;
+                            Draw();
+                        }
+                        catch (StoreIndexOutOfRangeExeption ex)
+                        {
+                            MessageBox.Show(ex.Message, "Неверный номер",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message, "Общая ошибка",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
 
                 }
@@ -104,6 +119,7 @@ namespace Lab2
         {
             parking.LevelDown();
             listBoxLevels.SelectedIndex = parking.getCurrentLevel;
+            log.Info("Переход на уровень ниже; Текщий уровень: " + parking.getCurrentLevel);
             Draw();
 
         }
@@ -112,6 +128,7 @@ namespace Lab2
         {
             parking.LevelUp();
             listBoxLevels.SelectedIndex = parking.getCurrentLevel;
+            log.Info("Переход на уровень выше; Текщий уровень: " + parking.getCurrentLevel);
             Draw();
 
         }
@@ -128,15 +145,22 @@ namespace Lab2
         {
             if (car != null)
             {
-                int place = parking.PutCarInParking(car);
-                if (place > -1)
+                try
                 {
+                    int place = parking.PutCarInParking(car);
+                    log.Info("Добавили " + place);
                     Draw();
                     MessageBox.Show("Ваше место: " + place);
                 }
-                else
+                catch (StoreOverflowExeption ex)
                 {
-                    MessageBox.Show("Машину не удалось поставить");
+                    MessageBox.Show(ex.Message, "Не удалось добавить",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Не удалось добавить",
+                       MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -147,6 +171,7 @@ namespace Lab2
             {
                 if (parking.SaveData(saveFileDialog1.FileName))
                 {
+                    log.Info("Сохранили файл");
                     MessageBox.Show("Сохранение прошло успешно", "",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -165,6 +190,7 @@ namespace Lab2
             {
                 if (parking.LoadData(openFileDialog1.FileName))
                 {
+                    log.Info("Загрузили из файла");
                     MessageBox.Show("Загрузили", "",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
