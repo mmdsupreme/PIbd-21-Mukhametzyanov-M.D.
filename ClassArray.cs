@@ -11,6 +11,7 @@ namespace Lab2
         private Dictionary<int, T> places;
 
         private int maxCount;
+        
         private T defaultValue;
 
         public ClassArray(int sizes, T defVal)
@@ -18,10 +19,11 @@ namespace Lab2
             defaultValue = defVal;
             places = new Dictionary<int, T>();
             maxCount = sizes;
+            
         }
 
 
-        public static int operator +(ClassArray<T> p, T Car)
+        public static int operator +(ClassArray<T> p, T car)
         {
             if (p.places.Count == p.maxCount)
             {
@@ -31,13 +33,16 @@ namespace Lab2
             {
                 if (p.CheckFreePlace(i))
                 {
-                    p.places.Add(i, Car);
+                    p.places.Add(i, car);
                     return i;
                 }
             }
-            p.places.Add(p.places.Count, Car);
+            p.places.Add(p.places.Count, car);
             return p.places.Count - 1;
 
+
+
+            
         }
 
         public static T operator -(ClassArray<T> p, int index)
@@ -50,13 +55,15 @@ namespace Lab2
             }
             return p.defaultValue;
 
+
+            
         }
 
         private bool CheckFreePlace(int index)
         {
 
             return !places.ContainsKey(index);
-         
+           
         }
 
         public T this[int ind]
