@@ -12,7 +12,6 @@ namespace Lab2
     {
         List<ClassArray<ITransport>> parkingStages;
 
-
         int countPlaces = 5;
 
         int placeSizeWidth = 300;
@@ -33,9 +32,9 @@ namespace Lab2
         {
             parkingStages = new List<ClassArray<ITransport>>();
             
-            for(int i = 2; i < countStages+2; i++)
+            for(int i = 0; i < countStages; i++)
             {
-                ClassArray<ITransport> classarr = new ClassArray<ITransport>(i, null);
+                ClassArray<ITransport> classarr = new ClassArray<ITransport>(4, null);
                 parkingStages.Add(classarr);
             } 
             
@@ -73,16 +72,17 @@ namespace Lab2
         public void Draw(Graphics g, int width, int height)
         {
             DrawMarking(g);
-            for (int i = 0; i < countPlaces; i++)
+            int i = 0;
+            foreach (var car in parkingStages[currentLevel])
             {
-                var car = parkingStages[currentLevel][i];
-                if (car != null)
-                {
-                    car.setPosition(5 + i / 5 * placeSizeWidth + 5, i % 5 * placeSizeHeight + 45);
-                    car.drawCar(g);
-                }
-
-            }
+                car.setPosition(5 + i / 5 * placeSizeWidth + 5, i % 5 * placeSizeHeight + 45);
+                car.drawCar(g);
+                i++;
+            }           
+        }
+        public void Sort()
+        {
+            parkingStages.Sort(); 
         }
 
         public void DrawMarking(Graphics g)
@@ -105,26 +105,26 @@ namespace Lab2
         }
 
         public bool SaveData(string filename) {
-            if (File.Exists(filename))  
+            if (File.Exists(filename))
             {
                 File.Delete(filename);
             }
-            using (FileStream fs = new FileStream(filename, FileMode.Create))                                                             
+            using (FileStream fs = new FileStream(filename, FileMode.Create))
             {
                 using (BufferedStream bs = new BufferedStream(fs))
                 {
-                    byte[] info = new UTF8Encoding(true).GetBytes("CountLeveles:" + parkingStages.Count + Environment.NewLine);                          
+                    byte[] info = new UTF8Encoding(true).GetBytes("CountLeveles:" + parkingStages.Count + Environment.NewLine);
                     fs.Write(info, 0, info.Length);
                     foreach (var level in parkingStages)
                     {
-                        info = new UTF8Encoding(true).GetBytes("Level" + Environment.NewLine);                                                
+                        info = new UTF8Encoding(true).GetBytes("Level" + Environment.NewLine);
                         fs.Write(info, 0, info.Length);
-                        for (int i = 0; i < countPlaces; i++)                                                                             
+                        for (int i = 0; i < countPlaces; i++)
                         {
                             var car = level[i];
-                            if (car != null)                                                                                                
+                            if (car != null)
                             {
-                                if (car.GetType().Name == "Car")                                                                           
+                                if (car.GetType().Name == "Car")
                                 {
                                     info = new UTF8Encoding(true).GetBytes("Car:");
                                     fs.Write(info, 0, info.Length);
@@ -134,7 +134,7 @@ namespace Lab2
                                     info = new UTF8Encoding(true).GetBytes("Jeep:");
                                     fs.Write(info, 0, info.Length);
                                 }
-                                info = new UTF8Encoding(true).GetBytes(car.getInfo() + Environment.NewLine);                                          //записывает параметры каждого
+                                info = new UTF8Encoding(true).GetBytes(car.getInfo() + Environment.NewLine);
                                 fs.Write(info, 0, info.Length);
                             }
                         }
@@ -147,32 +147,32 @@ namespace Lab2
 
         public bool LoadData(string filename)
         {
-            if (!File.Exists(filename))                                                                                    
+            if (!File.Exists(filename))
             {
                 return false;
             }
-            using (FileStream fs = new FileStream(filename, FileMode.Open))                                                 
+            using (FileStream fs = new FileStream(filename, FileMode.Open))
             {
                 string s = "";
                 using (BufferedStream bs = new BufferedStream(fs))
                 {
                     byte[] b = new byte[fs.Length];
                     UTF8Encoding temp = new UTF8Encoding(true);
-                    while (bs.Read(b, 0, b.Length) > 0)                                                                  
+                    while (bs.Read(b, 0, b.Length) > 0)
                     {
                         s += temp.GetString(b);
                     }                    
                 }
                 s = s.Replace("\r", "");
-                var strs = s.Split('\n');                                                                                   
-                if (strs[0].Contains("CountLeveles"))                                                                       
+                var strs = s.Split('\n');
+                if (strs[0].Contains("CountLeveles"))
                 {
                     int count = Convert.ToInt32(strs[0].Split(':')[1]);
-                    if (parkingStages != null)                                                                                  
+                    if (parkingStages != null)
                     {
-                        parkingStages.Clear();                                                                                 
+                        parkingStages.Clear();
                     }
-                    parkingStages = new List<ClassArray<ITransport>>(count);                                                     
+                    parkingStages = new List<ClassArray<ITransport>>(count);
                 }
                 else
                 {
