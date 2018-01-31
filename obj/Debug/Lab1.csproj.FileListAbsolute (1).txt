@@ -1,0 +1,10 @@
+c:\users\cube\documents\visual studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\bin\Debug\ULSTU_OOP_Csharp_HomeLab1.exe.config
+c:\users\cube\documents\visual studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\bin\Debug\ULSTU_OOP_Csharp_HomeLab1.exe
+c:\users\cube\documents\visual studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\bin\Debug\ULSTU_OOP_Csharp_HomeLab1.pdb
+c:\users\cube\documents\visual studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.csprojResolveAssemblyReference.cache
+c:\users\cube\documents\visual studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.Form1.resources
+c:\users\cube\documents\visual studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.Properties.Resources.resources
+c:\users\cube\documents\visual studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.csproj.GenerateResource.Cache
+c:\users\cube\documents\visual studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.csproj.CoreCompileInputs.cache
+c:\users\cube\documents\visual studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.exe
+c:\users\cube\documents\visual studio 2017\Projects\ULSTU_OOP_Csharp_HomeLab1\ULSTU_OOP_Csharp_HomeLab1\obj\Debug\ULSTU_OOP_Csharp_HomeLab1.pdb
